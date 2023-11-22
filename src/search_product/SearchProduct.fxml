@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" fx:controller="search_product.SearchProductScreenController" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="595.0" prefWidth="769.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff7300" height="71.0" layoutX="-1.0" layoutY="-1.0" stroke="BLACK" strokeType="INSIDE" width="776.0" />
+      <Label layoutX="246.0" layoutY="12.0" prefHeight="46.0" prefWidth="277.0" text="SEARCH PRODUCT" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="31.0" />
+         </font>
+      </Label>
+      <Label layoutX="56.0" layoutY="117.0" prefHeight="31.0" prefWidth="198.0" text="Product Name To Search">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextField  fx:id="productToSerach" layoutX="254.0" layoutY="109.0" prefHeight="39.0" prefWidth="311.0" style="-fx-background-radius: 5px;" />
+      <TextField  fx:id="productId" layoutX="254.0" layoutY="229.0" prefHeight="39.0" prefWidth="311.0" style="-fx-background-radius: 5px;" />
+      <TextField  fx:id="productName" layoutX="254.0" layoutY="169.0" prefHeight="39.0" prefWidth="311.0" style="-fx-background-radius: 5px;" />
+      <TextField  fx:id="productCategory" layoutX="254.0" layoutY="295.0" prefHeight="39.0" prefWidth="311.0" style="-fx-background-radius: 5px;" />
+      <TextField  fx:id="productQuantity" layoutX="254.0" layoutY="352.0" prefHeight="39.0" prefWidth="311.0" style="-fx-background-radius: 5px;" />
+      <TextField  fx:id="productPrice" layoutX="254.0" layoutY="410.0" prefHeight="39.0" prefWidth="311.0" style="-fx-background-radius: 5px;" />
+      <Label layoutX="56.0" layoutY="173.0" prefHeight="31.0" prefWidth="198.0" text="Product Name(English)">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="56.0" layoutY="233.0" prefHeight="31.0" prefWidth="198.0" text="Product ID">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="56.0" layoutY="299.0" prefHeight="31.0" prefWidth="198.0" text="Product Category">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="56.0" layoutY="356.0" prefHeight="31.0" prefWidth="198.0" text="Product Quantity">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="56.0" layoutY="414.0" prefHeight="31.0" prefWidth="198.0" text="Product Price">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Button fx:id="cancel" layoutX="211.0" layoutY="521.0" mnemonicParsing="false" onAction="#goToHomeScreen" prefHeight="39.0" prefWidth="174.0" style="-fx-background-radius: 10px; -fx-background-color: #ff3e3e;" text="Cancel" textFill="WHITE">
+         <font>
+            <Font name="System Italic" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="Search" layoutX="581.0" layoutY="109.0" mnemonicParsing="false" onAction="#searchToDataBase" prefHeight="39.0" prefWidth="174.0" style="-fx-background-radius: 10px; -fx-background-color: #13dd3f;" text="Search" textFill="WHITE">
+         <font>
+            <Font name="System Italic" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="Delete" layoutX="485.0" layoutY="521.0" mnemonicParsing="false" onAction="#deleteProduct" prefHeight="39.0" prefWidth="174.0" style="-fx-background-radius: 10px; -fx-background-color: #ff3e3e;" text="Delete" textFill="WHITE">
+         <font>
+            <Font name="System Italic" size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="productMessage" layoutX="176.0" layoutY="466.0" prefHeight="39.0" prefWidth="427.0">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>
